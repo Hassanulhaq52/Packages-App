@@ -1,30 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:packages_app/screens/package_screen.dart';
 
 import '../widgets/screen_button.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Button Screens',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: HomeScreen(),
-    );
-  }
-}
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Screen'),
+        title: const Text('Home Screen'),
       ),
       body: Center(
         child: Column(
@@ -69,19 +56,7 @@ class HomeScreen extends StatelessWidget {
 
 
 
-class PackageScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Package Screen'),
-      ),
-      body: Center(
-        child: Text('Package Screen Content'),
-      ),
-    );
-  }
-}
+
 
 class PickupDateScreen extends StatelessWidget {
   @override
