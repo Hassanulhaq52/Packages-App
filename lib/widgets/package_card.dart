@@ -75,13 +75,11 @@ class PackageCard extends StatelessWidget {
                     ),
                   ],
                 ),
-
               ],
             ),
           ),
         ],
       ),
     );
-
   }
 }

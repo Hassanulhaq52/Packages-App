@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class TimeSlotButton extends StatefulWidget {
   final String time;
 
-  const TimeSlotButton({required this.time});
+  const TimeSlotButton({super.key, required this.time});
 
   @override
   _TimeSlotButtonState createState() => _TimeSlotButtonState();

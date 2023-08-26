@@ -5,7 +5,8 @@ class ContainerColumn extends StatelessWidget {
   final String weekDay;
   final String date;
 
-  ContainerColumn({
+  const ContainerColumn({
+    super.key,
     required this.color,
     required this.weekDay,
     required this.date,
@@ -27,7 +28,7 @@ class ContainerColumn extends StatelessWidget {
             height: 50,
             decoration: BoxDecoration(
               color: color,
-              borderRadius: BorderRadius.only(
+              borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(8),
                 topRight: Radius.circular(8),
               ),

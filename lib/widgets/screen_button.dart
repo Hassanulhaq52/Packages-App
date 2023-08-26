@@ -4,7 +4,7 @@ class ScreenButton extends StatelessWidget {
   final String label;
   final VoidCallback onPressed;
 
-  ScreenButton({required this.label, required this.onPressed});
+  const ScreenButton({super.key, required this.label, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {

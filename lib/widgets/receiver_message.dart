@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-import '../screens/chat_screen.dart';
 import 'elevated_button.dart';
 
 class ReceiverMessage extends StatelessWidget {
@@ -8,7 +6,7 @@ class ReceiverMessage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return const Padding(
       padding: EdgeInsets.all(8.0),
       child: Column(
           mainAxisAlignment: MainAxisAlignment.start,

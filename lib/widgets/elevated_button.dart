@@ -4,7 +4,8 @@ class ElevatedContainer extends StatelessWidget {
   final Color color;
   final Widget child;
 
-  const ElevatedContainer({required this.color, required this.child});
+  const ElevatedContainer(
+      {super.key, required this.color, required this.child});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +19,7 @@ class ElevatedContainer extends StatelessWidget {
             color: Colors.grey.withOpacity(0.5),
             spreadRadius: 2,
             blurRadius: 4,
-            offset: Offset(0, 3), // changes position of shadow
+            offset: const Offset(0, 3),
           ),
         ],
       ),
