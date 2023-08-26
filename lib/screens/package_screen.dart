@@ -1,20 +1,4 @@
-// import 'package:flutter/material.dart';
-//
-// class PackageScreen extends StatelessWidget {
-//   const PackageScreen({super.key});
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: const Text('Package Screen'),
-//       ),
-//       body: const Center(
-//         child: Text('Package Screen Content'),
-//       ),
-//     );
-//   }
-// }
+
 
 import 'package:flutter/material.dart';
 
