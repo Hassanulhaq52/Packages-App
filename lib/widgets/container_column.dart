@@ -43,20 +43,16 @@ class ContainerColumn extends StatelessWidget {
             ),
           ),
           Container(
-            padding: EdgeInsets.symmetric(vertical: 8), // Adjust vertical padding as needed
+            padding: const EdgeInsets.symmetric(vertical: 8),
             alignment: Alignment.center,
             child: Text(
               date,
-              style: TextStyle(
-                fontSize: 12,
-                color: Colors.grey,
-                fontWeight: FontWeight.bold
-                // You can also set other text styles here
-              ),
+              style: const TextStyle(
+                  fontSize: 12,
+                  color: Colors.grey,
+                  fontWeight: FontWeight.bold),
             ),
           ),
-
-
         ],
       ),
     );

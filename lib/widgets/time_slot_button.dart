@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class TimeSlotButton extends StatefulWidget {
   final String time;
 
-  TimeSlotButton({required this.time});
+  const TimeSlotButton({required this.time});
 
   @override
   _TimeSlotButtonState createState() => _TimeSlotButtonState();
@@ -18,7 +18,6 @@ class _TimeSlotButtonState extends State<TimeSlotButton> {
       height: 40,
       width: 95,
       child: ElevatedButton(
-
         onPressed: () {
           setState(() {
             isSelected = !isSelected;
@@ -32,7 +31,9 @@ class _TimeSlotButtonState extends State<TimeSlotButton> {
           widget.time,
           style: TextStyle(
             fontSize: 10,
-            color: isSelected ? Colors.white : Colors.grey, fontStyle: FontStyle.italic, fontWeight: FontWeight.bold,
+            color: isSelected ? Colors.white : Colors.grey,
+            fontStyle: FontStyle.italic,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ),
