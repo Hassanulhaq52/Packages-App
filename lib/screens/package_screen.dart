@@ -67,7 +67,7 @@ class PackageScreen extends StatelessWidget {
               image: 'images/linen.png',
               title: '2 Linen Dry and Cleaning (\$80)',
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 40),
           ],
         ),
       ),

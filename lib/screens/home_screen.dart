@@ -20,22 +20,12 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ScreenButton(
-              label: 'Package Screen',
-              onPressed: () {
-
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => PackageScreen()),
-                );
-              },
-            ),
-            ScreenButton(
               label: 'Pickup Date Screen',
               onPressed: () {
 
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => PickupDateScreen()),
+                  MaterialPageRoute(builder: (context) => const PickupDateScreen()),
                 );
               },
             ),
@@ -45,10 +35,22 @@ class HomeScreen extends StatelessWidget {
 
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => ChatScreen()),
+                  MaterialPageRoute(builder: (context) => const ChatScreen()),
                 );
               },
             ),
+            ScreenButton(
+              label: 'Package Screen',
+              onPressed: () {
+
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const PackageScreen()),
+                );
+              },
+            ),
+
+
           ],
         ),
       ),

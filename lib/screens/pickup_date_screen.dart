@@ -75,7 +75,7 @@ class _PickupDateScreenState extends State<PickupDateScreen> {
               ],
             ),
             const SizedBox(height: 8),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 ContainerColumn(
