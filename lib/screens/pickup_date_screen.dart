@@ -33,9 +33,7 @@ class _PickupDateScreenState extends State<PickupDateScreen> {
               Icons.table_rows,
               color: Colors.blue,
             ),
-            onPressed: () {
-              // Handle the three lines wala icon action
-            },
+            onPressed: () {},
           ),
         ],
         backgroundColor: Colors.white,
@@ -68,7 +66,6 @@ class _PickupDateScreenState extends State<PickupDateScreen> {
                       color: Colors.grey,
                       fontStyle: FontStyle.italic),
                 ),
-                // SizedBox(width: 30,),
                 IconButton(
                     onPressed: () {},
                     icon: const Icon(
@@ -207,19 +204,18 @@ class _PickupDateScreenState extends State<PickupDateScreen> {
                           padding: const EdgeInsets.only(left: 28),
                           child: Text(
                             value,
-                            style: TextStyle(fontSize: 14),
+                            style: const TextStyle(fontSize: 14),
                           ),
                         ),
                       );
                     }).toList(),
                     onChanged: (value) {
                       setState(() {
-                        selectedRepeatOption = value!; // Update selected value
+                        selectedRepeatOption = value!;
                       });
                     },
                     value: selectedRepeatOption,
-                    // Set selected value
-                    icon: Icon(Icons.arrow_drop_down),
+                    icon: const Icon(Icons.arrow_drop_down),
                     iconSize: 24,
                     isExpanded: true,
                   ),
@@ -234,7 +230,7 @@ class _PickupDateScreenState extends State<PickupDateScreen> {
                 style: TextStyle(color: Colors.grey.shade600),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             Material(
@@ -254,8 +250,7 @@ class _PickupDateScreenState extends State<PickupDateScreen> {
                         child: GestureDetector(
                           onTap: () {
                             setState(() {
-                              selectedDropdownValue =
-                                  value; // Update the selected value
+                              selectedDropdownValue = value;
                             });
                           },
                           child: Container(
@@ -273,12 +268,12 @@ class _PickupDateScreenState extends State<PickupDateScreen> {
                     }).toList(),
                     onChanged: (value) {
                       setState(() {
-                        selectedDropdownValue = value!; // Update selected value
+                        selectedDropdownValue = value!;
                       });
                     },
                     value: selectedDropdownValue,
                     // Set selected value
-                    icon: Icon(Icons.arrow_drop_down),
+                    icon: const Icon(Icons.arrow_drop_down),
                     iconSize: 24,
                     isExpanded: true,
                   ),
@@ -292,7 +287,7 @@ class _PickupDateScreenState extends State<PickupDateScreen> {
                 primary: Colors.blue,
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10.0), // Adjust the radius as needed
+                  borderRadius: BorderRadius.circular(10.0),
                 ),
               ),
               child: const Text(
@@ -300,7 +295,6 @@ class _PickupDateScreenState extends State<PickupDateScreen> {
                 style: TextStyle(color: Colors.white, fontSize: 18),
               ),
             )
-
           ],
         ),
       ),

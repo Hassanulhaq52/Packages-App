@@ -16,7 +16,7 @@ class PackageCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      elevation: 4.0,
+      elevation: 8.0,
       child: Row(
         children: [
           Container(
@@ -75,12 +75,13 @@ class PackageCard extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(height: 4.0),
+
               ],
             ),
           ),
         ],
       ),
     );
+
   }
 }

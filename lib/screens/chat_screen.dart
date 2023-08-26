@@ -13,17 +13,15 @@ class ChatScreen extends StatelessWidget {
         backgroundColor: Colors.lightBlueAccent.shade400,
         elevation: 0.0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back),
           onPressed: () {
-            Navigator.pop(context); // Navigate back
+            Navigator.pop(context);
           },
         ),
         actions: [
           IconButton(
-            icon: Icon(Icons.table_rows_rounded),
-            onPressed: () {
-              // Handle the three lines wala icon action
-            },
+            icon: const Icon(Icons.table_rows_rounded),
+            onPressed: () {},
           ),
         ],
       ),
@@ -32,15 +30,15 @@ class ChatScreen extends StatelessWidget {
           Image.asset('images/home.png'),
           Expanded(
             child: ListView(
-              children: [
-                const SenderMessage(),
-                const SizedBox(height: 15),
-                Center(child: const Text('July 25  23:34')),
-                const ReceiverMessage(),
-                const SenderMessage(),
-                const ReceiverMessage(),
-                const SenderMessage(),
-                const SenderMessage(),
+              children: const [
+                SenderMessage(),
+                SizedBox(height: 15),
+                Center(child: Text('July 25  23:34')),
+                ReceiverMessage(),
+                SenderMessage(),
+                ReceiverMessage(),
+                SenderMessage(),
+                SenderMessage(),
               ],
             ),
           ),
@@ -75,7 +73,12 @@ class ChatScreen extends StatelessWidget {
                 IconButton(icon: const Icon(Icons.image), onPressed: () {}),
                 IconButton(
                     icon: const Icon(Icons.attach_file), onPressed: () {}),
-                IconButton(icon: const Icon(Icons.send), onPressed: () {}),
+                IconButton(
+                    icon: Icon(
+                      Icons.send,
+                      color: Colors.lightBlueAccent.shade400,
+                    ),
+                    onPressed: () {}),
               ],
             ),
           ),
