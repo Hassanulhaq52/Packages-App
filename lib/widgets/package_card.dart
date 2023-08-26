@@ -21,7 +21,7 @@ class PackageCard extends StatelessWidget {
         children: [
           Container(
             decoration: BoxDecoration(
-              color: Colors.blue.shade400,
+              color: Colors.lightBlueAccent.shade400,
               borderRadius: BorderRadius.circular(5),
               border: Border.all(color: Colors.white54, width: 2),
             ),
